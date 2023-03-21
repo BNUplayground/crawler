@@ -15,9 +15,14 @@ f = open('syft/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for image in images:
+for i in range(21, len(images)):
+    image = images[i]
     data_row = [image]
     print(image)
+    if image == "aerospike":
+        image = image + ":ee-6.2.0.7_1"
+    if image == "haskell":
+        image = image + ":9.2.7-slim-buster"
     os.system(f'docker pull ' + image)
     os.system(f'syft '+ image + ' -o spdx-json=syft/data.json')
     with open('syft/data.json', 'r') as f:

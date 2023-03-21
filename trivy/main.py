@@ -16,7 +16,8 @@ f = open('trivy/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for image in images:
+for i in range(15, len(images)):
+    image = images[i]
     data_row = []
     print(image)
     os.system(f'docker pull ' + image)
