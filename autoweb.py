@@ -2,7 +2,7 @@ from selenium import webdriver
 from threading import Thread
 import time
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.common.keys import Keys
 
 prefs = prefs = {
 'download.prompt_for_download': False,
@@ -23,7 +23,9 @@ finally:
     driver.find_element(By.CLASS_NAME, 'search').click()
     driver.find_element(By.CLASS_NAME, 'search').send_keys(
         "libnuma1 2.0.12-1+b1")
-    driver.find_element(By.CLASS_NAME, 'search').send_keys(Keys.ENTER)
+    # driver.find_element(By.CLASS_NAME, 'search').send_keys(Keys.ENTER)
+    driver.find_element(By.CLASS_NAME, 'btn').click()
+
 try:
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CLASS_NAME, 'btn')))
