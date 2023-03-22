@@ -16,17 +16,22 @@ driver = webdriver.Chrome(chrome_options=opts, executable_path='../chromedriver'
 driver = webdriver.Chrome('../chromedriver')
 driver.get('https://developer.aliyun.com/packageSearch')
 
-driver.find_element(By.CLASS_NAME, 'search').click()
-driver.find_element(By.CLASS_NAME, 'search').send_keys("sqlite-libs")
-driver.find_element(By.CLASS_NAME, 'btn').click()
-driver.find_element(By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
-time.sleep(2)
-driver.find_element(By.CLASS_NAME, 'search').click()
-driver.find_element(By.CLASS_NAME, 'search').send_keys("sqlite-libs")
-driver.find_element(By.CLASS_NAME, 'btn').click()
-driver.find_element(By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
-time.sleep(2)
-driver.find_element(By.CLASS_NAME, 'search').click()
-driver.find_element(By.CLASS_NAME, 'search').send_keys("sqlite-libs")
-driver.find_element(By.CLASS_NAME, 'btn').click()
-driver.find_element(By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
+try:
+    element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "search")))
+finally:
+    driver.find_element(By.CLASS_NAME, 'search').click()
+    driver.find_element(By.CLASS_NAME, 'search').send_keys(
+        "libnuma1 2.0.12-1+b1")
+    driver.find_element(By.CLASS_NAME, 'search').send_keys(Keys.ENTER)
+try:
+    element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CLASS_NAME, 'btn')))
+# finally:
+finally:
+    driver.find_element(By.CLASS_NAME, 'btn').click()
+    driver.find_element(
+        By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
+    print('success')
+
+time.sleep(20)
