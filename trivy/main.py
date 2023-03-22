@@ -14,7 +14,7 @@ f = open('trivy/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(25, len(images)):
+for i in range(47, len(images)):
     image = images[i]
     if(image == "aerospike"):
         image = image + ":ee-6.2.0.7_1"
@@ -24,6 +24,8 @@ for i in range(25, len(images)):
         image = image + ":8.6.2"
     if image == "t4cc0re/php-env":
         image = image + ":7.1-cli"
+    if image == "oraclelinux":
+        image = image + ":7.9"
     data_row = []
     print(image)
     os.system(f'docker pull ' + image)

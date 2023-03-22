@@ -15,7 +15,7 @@ f = open('syft/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(25, len(images)):
+for i in range(47, len(images)):
     image = images[i]
     data_row = [image]
     print(image)
@@ -27,6 +27,8 @@ for i in range(25, len(images)):
         image = image + ":8.6.2"
     if image == "t4cc0re/php-env":
         image = image + ":7.1-cli"
+    if image == "oraclelinux":
+        image = image + ":7.9"
     os.system(f'docker pull ' + image)
     os.system(f'syft '+ image + ' -o spdx-json=syft/data.json')
     with open('syft/data.json', 'r') as f:
