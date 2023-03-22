@@ -14,7 +14,7 @@ f = open('trivy/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(47, len(images)):
+for i in range(122, len(images)):
     image = images[i]
     if(image == "aerospike"):
         image = image + ":ee-6.2.0.7_1"
@@ -26,6 +26,14 @@ for i in range(47, len(images)):
         image = image + ":7.1-cli"
     if image == "oraclelinux":
         image = image + ":7.9"
+    if image == "java":
+        image = image + ":6"
+    if image == 'jenkins':
+        image = image + ":2.60.3"
+    if image == 'kibana':
+        image = image + ":8.6.2"
+    if image == 'elasticsearch':
+        image = image + ":8.6.2"
     data_row = []
     print(image)
     os.system(f'docker pull ' + image)

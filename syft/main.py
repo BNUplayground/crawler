@@ -15,7 +15,7 @@ f = open('syft/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(47, len(images)):
+for i in range(122, len(images)):
     image = images[i]
     data_row = [image]
     print(image)
@@ -29,6 +29,14 @@ for i in range(47, len(images)):
         image = image + ":7.1-cli"
     if image == "oraclelinux":
         image = image + ":7.9"
+    if image == "java":
+        image = image + ":6"
+    if image == 'jenkins':
+        image = image + ":2.60.3"
+    if image == 'kibana':
+        image = image + ":8.6.2"
+    if image == 'elasticsearch':
+        image = image + ":8.6.2"
     os.system(f'docker pull ' + image)
     os.system(f'syft '+ image + ' -o spdx-json=syft/data.json')
     with open('syft/data.json', 'r') as f:
