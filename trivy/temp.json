@@ -1,91 +1,81 @@
 {
   "SchemaVersion": 2,
-  "ArtifactName": "erlang",
+  "ArtifactName": "perl",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
       "Family": "debian",
       "Name": "11.6"
     },
-    "ImageID": "sha256:67515dab29624a0570e25d6c9029f3b306bc7345aa85386ddedb98c55cd69aab",
+    "ImageID": "sha256:0ced9209e0e62a48cfc7b335e91c034edfb2ad076cf34408ceac82be39147a21",
     "DiffIDs": [
       "sha256:ec09eb83ea031896df916feb3a61cefba9facf449c8a55d88667927538dca2b4",
       "sha256:053a1f71007ec7293dceb3f229446da4c36bad0d27116ab5324e1c7b61071eae",
       "sha256:a90e3914fb92b189ed9bbe543c4e4cc5be5bd3e7d221ef585405dd35b3e4db43",
       "sha256:5ab567b9150b948de4708a880cad7026665e7e0a227dea526cc3839eca4b2515",
       "sha256:d4514f8b2aac13e66dfc8b6e15aa2feb0d4ff942a192d9481f09b45e681ceb40",
-      "sha256:54fc43ecd32d8f3333ae0c71ef14619611f9f85c99f393bf5ccbf75ddc6e7cee",
-      "sha256:54ba2a72689ccfbb176eff4cbe072ecb45eeae222f3e70e319f1e5427279bdc0",
-      "sha256:6f2fc98bc8d5973a50dae03a82edb5bbdd6111465745c5d9c987988c528447ef"
+      "sha256:e19e53fd050b8f2683991d6188419083c4dc69557a8100cc564fc6d36e38886a",
+      "sha256:4669f35b231d492fbd00176e0d3257197864b873c2e48b97db55ba3a1306a8c3"
     ],
     "RepoTags": [
-      "erlang:latest"
+      "perl:latest"
     ],
     "RepoDigests": [
-      "erlang@sha256:9a2a8315d8223d4502c1d384b00f666b0d841b3ae9d3f8aa4bcf1b112b7adba9"
+      "perl@sha256:bddcd421200ff36085bf8f8a599fe8b649c0830ee3631ccc552984e70cd2b48e"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "container": "1b7c1039e7087aa4815fb63089a221d39cc0cc2a983f5d9d412f86284f7412ec",
-      "created": "2023-03-23T07:11:03.335347196Z",
+      "container": "4bb6054f271e6fb0f410464692719b0d24776e8f2df2124412a5cd06e4d288a6",
+      "created": "2023-03-23T11:16:01.123223727Z",
       "docker_version": "20.10.23",
       "history": [
         {
-          "created": "2023-03-23T01:30:15Z",
+          "created": "2023-03-23T01:30:15.031626984Z",
           "created_by": "/bin/sh -c #(nop) ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / "
         },
         {
-          "created": "2023-03-23T01:30:15Z",
+          "created": "2023-03-23T01:30:15.608875721Z",
           "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T06:01:27Z",
+          "created": "2023-03-23T06:01:27.739414073Z",
           "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t; \trm -rf /var/lib/apt/lists/*"
         },
         {
-          "created": "2023-03-23T06:01:32Z",
+          "created": "2023-03-23T06:01:32.932687046Z",
           "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg \u003e /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
         },
         {
-          "created": "2023-03-23T06:01:49Z",
+          "created": "2023-03-23T06:01:49.880760473Z",
           "created_by": "/bin/sh -c apt-get update \u0026\u0026 apt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t\u0026\u0026 rm -rf /var/lib/apt/lists/*"
         },
         {
-          "created": "2023-03-23T06:02:39Z",
+          "created": "2023-03-23T06:02:39.747700843Z",
           "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2\u003e/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
         },
         {
-          "created": "2023-03-23T07:02:43Z",
-          "created_by": "/bin/sh -c #(nop)  ENV OTP_VERSION=25.3 REBAR3_VERSION=3.20.0",
+          "created": "2023-03-23T11:10:48.810584193Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Peter Martini \u003cPeterCMartini@GMail.com\u003e, Zak B. Elep \u003czakame@cpan.org\u003e",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T07:02:43Z",
-          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=25.3",
+          "created": "2023-03-23T11:10:48.897300345Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/perl"
+        },
+        {
+          "created": "2023-03-23T11:16:00.753021277Z",
+          "created_by": "/bin/sh -c true     \u0026\u0026 curl -fL https://www.cpan.org/src/5.0/perl-5.36.0.tar.xz -o perl-5.36.0.tar.xz     \u0026\u0026 echo '0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0 *perl-5.36.0.tar.xz' | sha256sum --strict --check -     \u0026\u0026 tar --strip-components=1 -xaf perl-5.36.0.tar.xz -C /usr/src/perl     \u0026\u0026 rm perl-5.36.0.tar.xz     \u0026\u0026 cat *.patch | patch -p1     \u0026\u0026 gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"     \u0026\u0026 archBits=\"$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)\"     \u0026\u0026 archFlag=\"$([ \"$archBits\" = '64' ] \u0026\u0026 echo '-Duse64bitall' || echo '-Duse64bitint')\"     \u0026\u0026 ./Configure -Darchname=\"$gnuArch\" \"$archFlag\" -Duseshrplib -Dvendorprefix=/usr/local  -des     \u0026\u0026 make -j$(nproc)     \u0026\u0026 TEST_JOBS=$(nproc) make test_harness     \u0026\u0026 make install     \u0026\u0026 cd /usr/src     \u0026\u0026 curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7046.tar.gz     \u0026\u0026 echo '3e8c9d9b44a7348f9acc917163dbfc15bd5ea72501492cea3a35b346440ff862 *App-cpanminus-1.7046.tar.gz' | sha256sum --strict --check -     \u0026\u0026 tar -xzf App-cpanminus-1.7046.tar.gz \u0026\u0026 cd App-cpanminus-1.7046 \u0026\u0026 perl bin/cpanm . \u0026\u0026 cd /root     \u0026\u0026 cpanm IO::Socket::SSL     \u0026\u0026 curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997011/cpm -o /usr/local/bin/cpm     \u0026\u0026 echo '7dee2176a450a8be3a6b9b91dac603a0c3a7e807042626d3fe6c93d843f75610 */usr/local/bin/cpm' | sha256sum --strict --check -     \u0026\u0026 chmod +x /usr/local/bin/cpm     \u0026\u0026 true     \u0026\u0026 rm -fr /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7046* /tmp/*     \u0026\u0026 cpanm --version \u0026\u0026 cpm --version"
+        },
+        {
+          "created": "2023-03-23T11:16:01.017080526Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T07:10:42Z",
-          "created_by": "/bin/sh -c set -xe \t\u0026\u0026 OTP_DOWNLOAD_URL=\"https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz\" \t\u0026\u0026 OTP_DOWNLOAD_SHA256=\"f4fc2c5e1da56eb659003015ab80c42e50cef1129cca8c14457a522d1793498d\" \t\u0026\u0026 runtimeDeps='libodbc1 \t\t\tlibsctp1 \t\t\tlibwxgtk3.0 \t\t\tlibwxgtk-webview3.0-gtk3-0v5' \t\u0026\u0026 buildDeps='unixodbc-dev \t\t\tlibsctp-dev \t\t\tlibwxgtk-webview3.0-gtk3-dev' \t\u0026\u0026 apt-get update \t\u0026\u0026 apt-get install -y --no-install-recommends $runtimeDeps \t\u0026\u0026 apt-get install -y --no-install-recommends $buildDeps \t\u0026\u0026 curl -fSL -o otp-src.tar.gz \"$OTP_DOWNLOAD_URL\" \t\u0026\u0026 echo \"$OTP_DOWNLOAD_SHA256  otp-src.tar.gz\" | sha256sum -c - \t\u0026\u0026 export ERL_TOP=\"/usr/src/otp_src_${OTP_VERSION%%@*}\" \t\u0026\u0026 mkdir -vp $ERL_TOP \t\u0026\u0026 tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 \t\u0026\u0026 rm otp-src.tar.gz \t\u0026\u0026 ( cd $ERL_TOP \t  \u0026\u0026 ./otp_build autoconf \t  \u0026\u0026 gnuArch=\"$(dpkg-architecture --query DEB_HOST_GNU_TYPE)\" \t  \u0026\u0026 ./configure --build=\"$gnuArch\" \t  \u0026\u0026 make -j$(nproc) \t  \u0026\u0026 make -j$(nproc) docs DOC_TARGETS=chunks \t  \u0026\u0026 make install install-docs DOC_TARGETS=chunks ) \t\u0026\u0026 find /usr/local -name examples | xargs rm -rf \t\u0026\u0026 apt-get purge -y --auto-remove $buildDeps \t\u0026\u0026 rm -rf $ERL_TOP /var/lib/apt/lists/*"
-        },
-        {
-          "created": "2023-03-23T07:10:44Z",
-          "created_by": "/bin/sh -c #(nop)  CMD [\"erl\"]",
+          "created": "2023-03-23T11:16:01.123223727Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"perl5.36.0\" \"-de0\"]",
           "empty_layer": true
-        },
-        {
-          "created": "2023-03-23T07:10:44Z",
-          "created_by": "/bin/sh -c #(nop)  ENV REBAR_VERSION=2.6.4",
-          "empty_layer": true
-        },
-        {
-          "created": "2023-03-23T07:10:48Z",
-          "created_by": "/bin/sh -c set -xe \t\u0026\u0026 REBAR_DOWNLOAD_URL=\"https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz\" \t\u0026\u0026 REBAR_DOWNLOAD_SHA256=\"577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07\" \t\u0026\u0026 mkdir -p /usr/src/rebar-src \t\u0026\u0026 curl -fSL -o rebar-src.tar.gz \"$REBAR_DOWNLOAD_URL\" \t\u0026\u0026 echo \"$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz\" | sha256sum -c - \t\u0026\u0026 tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 \t\u0026\u0026 rm rebar-src.tar.gz \t\u0026\u0026 cd /usr/src/rebar-src \t\u0026\u0026 ./bootstrap \t\u0026\u0026 install -v ./rebar /usr/local/bin/ \t\u0026\u0026 rm -rf /usr/src/rebar-src"
-        },
-        {
-          "created": "2023-03-23T07:11:03Z",
-          "created_by": "/bin/sh -c set -xe \t\u0026\u0026 REBAR3_DOWNLOAD_URL=\"https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz\" \t\u0026\u0026 REBAR3_DOWNLOAD_SHA256=\"53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de\" \t\u0026\u0026 mkdir -p /usr/src/rebar3-src \t\u0026\u0026 curl -fSL -o rebar3-src.tar.gz \"$REBAR3_DOWNLOAD_URL\" \t\u0026\u0026 echo \"$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz\" | sha256sum -c - \t\u0026\u0026 tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 \t\u0026\u0026 rm rebar3-src.tar.gz \t\u0026\u0026 cd /usr/src/rebar3-src \t\u0026\u0026 HOME=$PWD ./bootstrap \t\u0026\u0026 install -v ./rebar3 /usr/local/bin/ \t\u0026\u0026 rm -rf /usr/src/rebar3-src"
         }
       ],
       "os": "linux",
@@ -97,31 +87,29 @@
           "sha256:a90e3914fb92b189ed9bbe543c4e4cc5be5bd3e7d221ef585405dd35b3e4db43",
           "sha256:5ab567b9150b948de4708a880cad7026665e7e0a227dea526cc3839eca4b2515",
           "sha256:d4514f8b2aac13e66dfc8b6e15aa2feb0d4ff942a192d9481f09b45e681ceb40",
-          "sha256:54fc43ecd32d8f3333ae0c71ef14619611f9f85c99f393bf5ccbf75ddc6e7cee",
-          "sha256:54ba2a72689ccfbb176eff4cbe072ecb45eeae222f3e70e319f1e5427279bdc0",
-          "sha256:6f2fc98bc8d5973a50dae03a82edb5bbdd6111465745c5d9c987988c528447ef"
+          "sha256:e19e53fd050b8f2683991d6188419083c4dc69557a8100cc564fc6d36e38886a",
+          "sha256:4669f35b231d492fbd00176e0d3257197864b873c2e48b97db55ba3a1306a8c3"
         ]
       },
       "config": {
         "Cmd": [
-          "erl"
+          "perl5.36.0",
+          "-de0"
         ],
         "Env": [
-          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-          "OTP_VERSION=25.3",
-          "REBAR3_VERSION=3.20.0",
-          "REBAR_VERSION=2.6.4"
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         ],
-        "Image": "sha256:32466a2d2b10e34fc100111845cdcff0601c76432e6857b453211b28940ccb8d",
+        "Image": "sha256:581572474a7321ecedfae2a55c3af445b7354e8853743c9936c092e576902bcb",
         "Labels": {
-          "org.opencontainers.image.version": "25.3"
-        }
+          "maintainer": "Peter Martini \u003cPeterCMartini@GMail.com\u003e, Zak B. Elep \u003czakame@cpan.org\u003e"
+        },
+        "WorkingDir": "/"
       }
     }
   },
   "Results": [
     {
-      "Target": "erlang (debian 11.6)",
+      "Target": "perl (debian 11.6)",
       "Class": "os-pkgs",
       "Type": "debian"
     }
