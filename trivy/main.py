@@ -10,11 +10,11 @@ with open(filename, 'r') as file:
         images.append(row[0])
 print(images)
 
-f = open('trivy/res.csv', 'a+')
+f = open('trivy/eg.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(122, len(images)):
+for i in range(0, 10):
     image = images[i]
     if(image == "aerospike"):
         image = image + ":ee-6.2.0.7_1"
@@ -65,7 +65,8 @@ for i in range(122, len(images)):
                     print('InstalledVersion:', vulnerability['InstalledVersion'])
                     # temp_data.append(vulnerability['FixedVersion'])
                     print('FixedVersion:', vulnerability['FixedVersion'])
-                    csv_writer.writerow(data_row + [vulnerability['VulnerabilityID'], vulnerability['InstalledVersion'], vulnerability['FixedVersion']])
+                    print('PkgName:', vulnerability['PkgName'])
+                    csv_writer.writerow(data_row + [vulnerability['VulnerabilityID'], vulnerability['InstalledVersion'], vulnerability['FixedVersion'], vulnerability['PkgName']])
             else:
                 csv_writer.writerow(data_row)
             print('--------------------------------------------------')
