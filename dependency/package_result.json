@@ -1,0 +1,67 @@
+{
+  "risk_information": [
+    {
+      "image_name": "ogazitt/node-env:latest",
+      "Fixable_Risk": [
+        {
+          "VulnerabilityID": "CVE-2022-3517",
+          "Severity": "HIGH",
+          "packages": {
+            "PkgName": "minimatch",
+            "package_size": 940176,
+            "FixedVersion": "3.0.5",
+            "website": "https://developer.aliyun.com/rpm/node-minimatch_5.1.0+~3.0.5-1_all?spm=a2c6h.13651111.0.0.3f2d2f70cHXYSp&file=node-minimatch_5.1.0+~3.0.5-1_all",
+            "path": "debian/pool/main/n/node-minimatch/node-minimatch_5.1.0+~3.0.5-1_all.deb",
+            "requires": [
+              {
+                "required_PkgName": "node-brace-expansion",
+                "required_version": "",
+                "required_package_size": 6368,
+                "required_package_path": "ubuntu/pool/universe/n/node-brace-expansion/node-brace-expansion_1.1.11-1_all.deb"
+              }
+            ]
+          }
+        },
+        {
+          "VulnerabilityID": "NSWG-ECO-118",
+          "Severity": "HIGH",
+          "packages": {
+            "PkgName": "minimatch",
+            "FixedVersion": ">=3.0.2",
+            "package_size": 940176,
+            "website": "https://developer.aliyun.com/rpm/node-minimatch_5.1.0+~3.0.5-1_all?spm=a2c6h.13651111.0.0.3f2d2f70cHXYSp&file=node-minimatch_5.1.0+~3.0.5-1_all",
+            "path": "debian/pool/main/n/node-minimatch/node-minimatch_5.1.0+~3.0.5-1_all.deb",
+            "requires": [
+              {
+                "required_PkgName": "node-brace-expansion",
+                "required_version": "",
+                "required_package_size": 6368,
+                "required_package_path": "ubuntu/pool/universe/n/node-brace-expansion/node-brace-expansion_1.1.11-1_all.deb"
+              }
+            ]
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44906",
+          "Severity": "CRITICAL",
+          "packages": {
+            "PkgName": "minimist",
+            "FixedVersion": "0.2.4, 1.2.6",
+            "package_size": 940176,
+            "website": "https://developer.aliyun.com/rpm/node-minimist_1.2.6+~cs5.3.2-1_all?spm=a2c6h.13651111.0.0.3f2d2f70cHXYSp&file=node-minimist_1.2.6+~cs5.3.2-1_all",
+            "path": "debian/pool/main/n/node-minimist/node-minimist_1.2.6+~cs5.3.2-1_all.deb",
+            "requires": [
+              {
+                "required_PkgName": "node-brace-expansion",
+                "required_version": "",
+                "required_package_size": 6368,
+                "required_package_path": "ubuntu/pool/universe/n/node-brace-expansion/node-brace-expansion_1.1.11-1_all.deb"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {}
+  ]
+}

@@ -15,7 +15,7 @@ f = open('syft/res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(21, len(images)):
+for i in range(122, len(images)):
     image = images[i]
     data_row = [image]
     print(image)
@@ -23,6 +23,20 @@ for i in range(21, len(images)):
         image = image + ":ee-6.2.0.7_1"
     if image == "haskell":
         image = image + ":9.2.7-slim-buster"
+    if image == "logstash":
+        image = image + ":8.6.2"
+    if image == "t4cc0re/php-env":
+        image = image + ":7.1-cli"
+    if image == "oraclelinux":
+        image = image + ":7.9"
+    if image == "java":
+        image = image + ":6"
+    if image == 'jenkins':
+        image = image + ":2.60.3"
+    if image == 'kibana':
+        image = image + ":8.6.2"
+    if image == 'elasticsearch':
+        image = image + ":8.6.2"
     os.system(f'docker pull ' + image)
     os.system(f'syft '+ image + ' -o spdx-json=syft/data.json')
     with open('syft/data.json', 'r') as f:
@@ -33,11 +47,14 @@ for i in range(21, len(images)):
     print(name)
     packages = data.get("packages")
     # print(image)
-    for package in packages:
-        print('package:', package.get('name'))
-        print('version:', package.get('versionInfo'))
-        csv_writer.writerow(data_row + [package.get('name'), package.get('versionInfo')])
-    # clear content inside
-    print('--------------------------------------------------')
+    if packages:
+        for package in packages:
+            print('package:', package.get('name'))
+            print('version:', package.get('versionInfo'))
+            csv_writer.writerow(data_row + [package.get('name'), package.get('versionInfo')])
+        # clear content inside
+        print('--------------------------------------------------')
+    else:
+        csv_writer.writerow(data_row)
 
 # res = data['Results']

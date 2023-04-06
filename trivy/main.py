@@ -8,16 +8,32 @@ with open(filename, 'r') as file:
     csv_reader = csv.reader(file)
     for row in csv_reader:
         images.append(row[0])
-        print(row[0])
-
 print(images)
 
-f = open('trivy/res.csv', 'a+')
+f = open('trivy/eg.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(15, len(images)):
+for i in range(0, 5):
     image = images[i]
+    if(image == "aerospike"):
+        image = image + ":ee-6.2.0.7_1"
+    if image == "haskell":
+        image = image + ":9.2.7-slim-buster"
+    if image == "logstash":
+        image = image + ":8.6.2"
+    if image == "t4cc0re/php-env":
+        image = image + ":7.1-cli"
+    if image == "oraclelinux":
+        image = image + ":7.9"
+    if image == "java":
+        image = image + ":6"
+    if image == 'jenkins':
+        image = image + ":2.60.3"
+    if image == 'kibana':
+        image = image + ":8.6.2"
+    if image == 'elasticsearch':
+        image = image + ":8.6.2"
     data_row = []
     print(image)
     os.system(f'docker pull ' + image)
@@ -35,21 +51,26 @@ for i in range(15, len(images)):
     # Extract the required information
     image = data.get("Results")
     # print(image)
-    for result in image:
-        print('Target:', result.get('Target'))
-        # print('RepoTags:', result.get['RepoTags'])
-        # temp_data = data_row
-        # print('RepoDigests:', result.get['RepoDigests'])
-        if "Vulnerabilities" in result.keys():
-            for vulnerability in result['Vulnerabilities']:
-                # temp_data.append(vulnerability['VulnerabilityID'])
-                print('VulnerabilityID:', vulnerability['VulnerabilityID'])
-                # temp_data.append(vulnerability['InstalledVersion'])
-                print('InstalledVersion:', vulnerability['InstalledVersion'])
-                # temp_data.append(vulnerability['FixedVersion'])
-                print('FixedVersion:', vulnerability['FixedVersion'])
-                csv_writer.writerow(data_row + [vulnerability['VulnerabilityID'], vulnerability['InstalledVersion'], vulnerability['FixedVersion']])
-        else:
-            csv_writer.writerow(data_row)
-        print('--------------------------------------------------')
+    if image:
+        for result in image:
+            print('Target:', result.get('Target'))
+            # print('RepoTags:', result.get['RepoTags'])
+            # temp_data = data_row
+            # print('RepoDigests:', result.get['RepoDigests'])
+            if "Vulnerabilities" in result.keys():
+                for vulnerability in result['Vulnerabilities']:
+                    # temp_data.append(vulnerability['VulnerabilityID'])
+                    print('VulnerabilityID:', vulnerability['VulnerabilityID'])
+                    # temp_data.append(vulnerability['InstalledVersion'])
+                    print('InstalledVersion:', vulnerability['InstalledVersion'])
+                    # temp_data.append(vulnerability['FixedVersion'])
+                    print('FixedVersion:', vulnerability['FixedVersion'])
+                    print('PkgName:', vulnerability['PkgName'])
+                    print('Severity:', vulnerability['Severity'])
+                    csv_writer.writerow(data_row + [vulnerability['VulnerabilityID'], vulnerability['InstalledVersion'], vulnerability['FixedVersion'], vulnerability['PkgName'], vulnerability['Severity']])
+            else:
+                csv_writer.writerow(data_row)
+            print('--------------------------------------------------')
+    else:
+        csv_writer.writerow(data_row)
 # res = data['Results']
