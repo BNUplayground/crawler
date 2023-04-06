@@ -10,8 +10,12 @@ prefs = prefs = {
     'download.extensions_to_open': 'rpm',
     'safebrowsing.enabled': True
 }
+# options = webdriver.ChromeOptions()
+# options.add_experimental_option(‘excludeSwitches’, [‘enable-logging’])
+# web = webdriver.Chrome(options=options)
 opts = webdriver.ChromeOptions()
 opts.add_experimental_option("prefs", prefs)
+opts.add_experimental_option('excludeSwitches', ['enable-logging'])
 driver = webdriver.Chrome(
     chrome_options=opts, executable_path='../chromedriver')
 
@@ -26,37 +30,37 @@ finally:
         "libnuma1 2.0.12-1+b1")
 
     # 按理来说key.enter和btn.click()选一个就好
-    driver.find_element(By.CLASS_NAME, 'search').send_keys(
-        Keys.ENTER)
+    # driver.find_element(By.CLASS_NAME, 'search').send_keys(
+    #     Keys.ENTER)
     # element = WebDriverWait(driver, 10).until(
     #     EC.presence_of_element_located((By.CLASS_NAME, 'btn')))
-    # driver.find_element(By.CLASS_NAME, 'btn').click()
+    driver.find_element(By.CLASS_NAME, 'btn').click()
 try:
-
     # 主要是看这句有没有用
     WebDriverWait(driver, 20).until(EC.staleness_of(element))
+    time.sleep(2)
 finally:
     driver.find_element(
         By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
     print('success')
 
-try:
-    element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CLASS_NAME, "search")))
-finally:
-    driver.find_element(By.CLASS_NAME, 'search').click()
-    driver.find_element(By.CLASS_NAME, 'search').send_keys(
-        "block-stream 0.0.7")
-    # element = WebDriverWait(driver, 10).until(
-    #     EC.presence_of_element_located((By.CLASS_NAME, 'btn')))
-    # driver.find_element(By.CLASS_NAME, 'btn').click()
-    driver.find_element(By.CLASS_NAME, 'search').send_keys(
-        Keys.ENTER)
-try:
-    WebDriverWait(driver, 20).until(EC.staleness_of(element))
-finally:
-    driver.find_element(
-        By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
-    print('success')
+# try:
+#     element = WebDriverWait(driver, 10).until(
+#         EC.presence_of_element_located((By.CLASS_NAME, "search")))
+# finally:
+#     driver.find_element(By.CLASS_NAME, 'search').click()
+#     driver.find_element(By.CLASS_NAME, 'search').send_keys(
+#         "block-stream 0.0.7")
+#     # element = WebDriverWait(driver, 10).until(
+#     #     EC.presence_of_element_located((By.CLASS_NAME, 'btn')))
+#     # driver.find_element(By.CLASS_NAME, 'btn').click()
+#     driver.find_element(By.CLASS_NAME, 'search').send_keys(
+#         Keys.ENTER)
+# try:
+#     WebDriverWait(driver, 20).until(EC.staleness_of(element))
+# finally:
+#     driver.find_element(
+#         By.XPATH, '//*[@id="mirror-search"]/div/div[3]/div[1]/div[2]/div[1]/div[5]/a').click()
+#     print('success')
 
 time.sleep(2)
