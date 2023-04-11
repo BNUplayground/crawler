@@ -1,0 +1,2 @@
+['ogazitt/node-env:latest'],['ogazitt/node-env@sha256:2698809d26cbcb9ff23c68508f2f1428f57b0d18586b8a9f9ae3617e5a3cdff7'],CVE-2020-8244,0.9.1,"2.2.1, 1.2.3, 4.0.3, 3.0.1",bl,MEDIUM
+['ogazitt/node-env:latest'],['ogazitt/node-env@sha256:2698809d26cbcb9ff23c68508f2f1428f57b0d18586b8a9f9ae3617e5a3cdff7'],GHSA-wrw9-m778-g6mc,0.9.1,"1.0.1, 0.9.5",bl,MEDIUM

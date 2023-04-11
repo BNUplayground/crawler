@@ -10,11 +10,11 @@ with open(filename, 'r') as file:
         images.append(row[0])
 print(images)
 
-f = open('trivy/eg.csv', 'a+')
+f = open('trivy/res_all.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(0, 5):
+for i in range(132, len(images)):
     image = images[i]
     if(image == "aerospike"):
         image = image + ":ee-6.2.0.7_1"

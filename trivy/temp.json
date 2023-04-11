@@ -1,80 +1,230 @@
 {
   "SchemaVersion": 2,
-  "ArtifactName": "perl",
+  "ArtifactName": "wordpress",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
       "Family": "debian",
       "Name": "11.6"
     },
-    "ImageID": "sha256:0ced9209e0e62a48cfc7b335e91c034edfb2ad076cf34408ceac82be39147a21",
+    "ImageID": "sha256:3d55a510c77e3af1a27fa189967ac05f3e4b9fdb4f09ce6e098cd3bd359245a0",
     "DiffIDs": [
-      "sha256:ec09eb83ea031896df916feb3a61cefba9facf449c8a55d88667927538dca2b4",
-      "sha256:053a1f71007ec7293dceb3f229446da4c36bad0d27116ab5324e1c7b61071eae",
-      "sha256:a90e3914fb92b189ed9bbe543c4e4cc5be5bd3e7d221ef585405dd35b3e4db43",
-      "sha256:5ab567b9150b948de4708a880cad7026665e7e0a227dea526cc3839eca4b2515",
-      "sha256:d4514f8b2aac13e66dfc8b6e15aa2feb0d4ff942a192d9481f09b45e681ceb40",
-      "sha256:e19e53fd050b8f2683991d6188419083c4dc69557a8100cc564fc6d36e38886a",
-      "sha256:4669f35b231d492fbd00176e0d3257197864b873c2e48b97db55ba3a1306a8c3"
+      "sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6",
+      "sha256:b45c80a24442fcdcc7bbb616407166b8998b11634be9623ccc32904099844a51",
+      "sha256:c4bd73e3313b668236e736cc7a72771cb8952e4268afe5c40285360b32e8aa0f",
+      "sha256:cfb7053350c422cfb726e8f8a4d72b8610ee6eac5528d879cdd8cc62fb1e4d4b",
+      "sha256:8b80409103eeaab5d0b91cccf0b9433d56eaad369e7ac516ab81bfdd5246a214",
+      "sha256:07583c9c30165412b76a9485260e701007b6ed0552a31a98515f5ca56060adff",
+      "sha256:4adc4f8ad1cb16307c608a608bfa4fe0ced3f66b3631ddc785c16b35a53e6163",
+      "sha256:e488e800e73bca13f323d37eaa4de10a4a0171023ac730267544f1bd8229d5da",
+      "sha256:9f9b5770e7807412766d854a63f6b336173f759d7fb6024f1c7857846c17e62f",
+      "sha256:1f434a91a4e142b65191fa525fbd0e8abbe907d3140a40914e3f992595179917",
+      "sha256:f4dfe6d892cd117521fe07377bd0a834f8aa03e90fad8f9f1fef19a79048da98",
+      "sha256:6c0a8e761c04168b46fe188e29db2434a49ec29ee2d5eebe5ede2d6b360eb4cd",
+      "sha256:26801b112ae2387eb9b16565936ab3a8c8a41788f8ffc93c73573ca32e8c0741",
+      "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1",
+      "sha256:a0dc0c8f0f82b7cfb2fe00646e087484193ae209ae05748207833a3f976bcff7",
+      "sha256:8629619640e326a754b8d635de0e48a65d641b7398ca85127bffcd14df9bd76a",
+      "sha256:4084dcb4694272e1d5734c5c2011c6612188b6e2a7f02425127f1a313c1f351c",
+      "sha256:272224f8743068129ddb31846464f1f3e112b28035f82b92f4a484fbe85932aa",
+      "sha256:03b3480fe4fd0762855c16c7486c8c037750920a61ab279d515f7394df32814a",
+      "sha256:c40821032f2eeff56d1b6cc433943d68537b0aee50e0b6c642771fd22185e462",
+      "sha256:38f788d44da4fd32b10c2a66f8b9b21e06ec88d6e2632527e0d8f45485c27d0f"
     ],
     "RepoTags": [
-      "perl:latest"
+      "wordpress:latest"
     ],
     "RepoDigests": [
-      "perl@sha256:bddcd421200ff36085bf8f8a599fe8b649c0830ee3631ccc552984e70cd2b48e"
+      "wordpress@sha256:fad1ce2182a79e442b20b333a3be786e84a4e44391f87dab51a1992e22790528"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "container": "4bb6054f271e6fb0f410464692719b0d24776e8f2df2124412a5cd06e4d288a6",
-      "created": "2023-03-23T11:16:01.123223727Z",
+      "container": "3b24028610f95b3577c7c994ee2c4be8f6c5750c7503fe7803d019b4a83fdfc2",
+      "created": "2023-03-31T00:20:19.848769661Z",
       "docker_version": "20.10.23",
       "history": [
         {
-          "created": "2023-03-23T01:30:15.031626984Z",
-          "created_by": "/bin/sh -c #(nop) ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / "
+          "created": "2023-03-23T01:30:27Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / "
         },
         {
-          "created": "2023-03-23T01:30:15.608875721Z",
+          "created": "2023-03-23T01:30:27Z",
           "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T06:01:27.739414073Z",
-          "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t; \trm -rf /var/lib/apt/lists/*"
+          "created": "2023-03-23T09:31:02Z",
+          "created_by": "/bin/sh -c set -eux; \t{ \t\techo 'Package: php*'; \t\techo 'Pin: release *'; \t\techo 'Pin-Priority: -1'; \t} \u003e /etc/apt/preferences.d/no-debian-php"
         },
         {
-          "created": "2023-03-23T06:01:32.932687046Z",
-          "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg \u003e /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
-        },
-        {
-          "created": "2023-03-23T06:01:49.880760473Z",
-          "created_by": "/bin/sh -c apt-get update \u0026\u0026 apt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t\u0026\u0026 rm -rf /var/lib/apt/lists/*"
-        },
-        {
-          "created": "2023-03-23T06:02:39.747700843Z",
-          "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2\u003e/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
-        },
-        {
-          "created": "2023-03-23T11:10:48.810584193Z",
-          "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Peter Martini \u003cPeterCMartini@GMail.com\u003e, Zak B. Elep \u003czakame@cpan.org\u003e",
+          "created": "2023-03-23T09:31:03Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T11:10:48.897300345Z",
-          "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/perl"
+          "created": "2023-03-23T09:31:19Z",
+          "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\t$PHPIZE_DEPS \t\tca-certificates \t\tcurl \t\txz-utils \t; \trm -rf /var/lib/apt/lists/*"
         },
         {
-          "created": "2023-03-23T11:16:00.753021277Z",
-          "created_by": "/bin/sh -c true     \u0026\u0026 curl -fL https://www.cpan.org/src/5.0/perl-5.36.0.tar.xz -o perl-5.36.0.tar.xz     \u0026\u0026 echo '0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0 *perl-5.36.0.tar.xz' | sha256sum --strict --check -     \u0026\u0026 tar --strip-components=1 -xaf perl-5.36.0.tar.xz -C /usr/src/perl     \u0026\u0026 rm perl-5.36.0.tar.xz     \u0026\u0026 cat *.patch | patch -p1     \u0026\u0026 gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"     \u0026\u0026 archBits=\"$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)\"     \u0026\u0026 archFlag=\"$([ \"$archBits\" = '64' ] \u0026\u0026 echo '-Duse64bitall' || echo '-Duse64bitint')\"     \u0026\u0026 ./Configure -Darchname=\"$gnuArch\" \"$archFlag\" -Duseshrplib -Dvendorprefix=/usr/local  -des     \u0026\u0026 make -j$(nproc)     \u0026\u0026 TEST_JOBS=$(nproc) make test_harness     \u0026\u0026 make install     \u0026\u0026 cd /usr/src     \u0026\u0026 curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7046.tar.gz     \u0026\u0026 echo '3e8c9d9b44a7348f9acc917163dbfc15bd5ea72501492cea3a35b346440ff862 *App-cpanminus-1.7046.tar.gz' | sha256sum --strict --check -     \u0026\u0026 tar -xzf App-cpanminus-1.7046.tar.gz \u0026\u0026 cd App-cpanminus-1.7046 \u0026\u0026 perl bin/cpanm . \u0026\u0026 cd /root     \u0026\u0026 cpanm IO::Socket::SSL     \u0026\u0026 curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997011/cpm -o /usr/local/bin/cpm     \u0026\u0026 echo '7dee2176a450a8be3a6b9b91dac603a0c3a7e807042626d3fe6c93d843f75610 */usr/local/bin/cpm' | sha256sum --strict --check -     \u0026\u0026 chmod +x /usr/local/bin/cpm     \u0026\u0026 true     \u0026\u0026 rm -fr /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7046* /tmp/*     \u0026\u0026 cpanm --version \u0026\u0026 cpm --version"
-        },
-        {
-          "created": "2023-03-23T11:16:01.017080526Z",
-          "created_by": "/bin/sh -c #(nop) WORKDIR /",
+          "created": "2023-03-23T09:31:19Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_INI_DIR=/usr/local/etc/php",
           "empty_layer": true
         },
         {
-          "created": "2023-03-23T11:16:01.123223727Z",
-          "created_by": "/bin/sh -c #(nop)  CMD [\"perl5.36.0\" \"-de0\"]",
+          "created": "2023-03-27T22:33:07Z",
+          "created_by": "/bin/sh -c set -eux; \tmkdir -p \"$PHP_INI_DIR/conf.d\"; \t[ ! -d /var/www/html ]; \tmkdir -p /var/www/html; \tchown www-data:www-data /var/www/html; \tchmod 1777 /var/www/html"
+        },
+        {
+          "created": "2023-03-27T22:36:30Z",
+          "created_by": "/bin/sh -c #(nop)  ENV APACHE_CONFDIR=/etc/apache2",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-27T22:36:30Z",
+          "created_by": "/bin/sh -c #(nop)  ENV APACHE_ENVVARS=/etc/apache2/envvars",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-27T22:36:40Z",
+          "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends apache2; \trm -rf /var/lib/apt/lists/*; \t\tsed -ri 's/^export ([^=]+)=(.*)$/: ${\\1:=\\2}\\nexport \\1/' \"$APACHE_ENVVARS\"; \t\t. \"$APACHE_ENVVARS\"; \tfor dir in \t\t\"$APACHE_LOCK_DIR\" \t\t\"$APACHE_RUN_DIR\" \t\t\"$APACHE_LOG_DIR\" \t; do \t\trm -rvf \"$dir\"; \t\tmkdir -p \"$dir\"; \t\tchown \"$APACHE_RUN_USER:$APACHE_RUN_GROUP\" \"$dir\"; \t\tchmod 1777 \"$dir\"; \tdone; \t\trm -rvf /var/www/html/*; \t\tln -sfT /dev/stderr \"$APACHE_LOG_DIR/error.log\"; \tln -sfT /dev/stdout \"$APACHE_LOG_DIR/access.log\"; \tln -sfT /dev/stdout \"$APACHE_LOG_DIR/other_vhosts_access.log\"; \tchown -R --no-dereference \"$APACHE_RUN_USER:$APACHE_RUN_GROUP\" \"$APACHE_LOG_DIR\""
+        },
+        {
+          "created": "2023-03-27T22:36:41Z",
+          "created_by": "/bin/sh -c a2dismod mpm_event \u0026\u0026 a2enmod mpm_prefork"
+        },
+        {
+          "created": "2023-03-27T22:36:41Z",
+          "created_by": "/bin/sh -c { \t\techo '\u003cFilesMatch \\.php$\u003e'; \t\techo '\\tSetHandler application/x-httpd-php'; \t\techo '\u003c/FilesMatch\u003e'; \t\techo; \t\techo 'DirectoryIndex disabled'; \t\techo 'DirectoryIndex index.php index.html'; \t\techo; \t\techo '\u003cDirectory /var/www/\u003e'; \t\techo '\\tOptions -Indexes'; \t\techo '\\tAllowOverride All'; \t\techo '\u003c/Directory\u003e'; \t} | tee \"$APACHE_CONFDIR/conf-available/docker-php.conf\" \t\u0026\u0026 a2enconf docker-php"
+        },
+        {
+          "created": "2023-03-27T22:36:41Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-27T22:36:41Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-27T22:36:41Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_LDFLAGS=-Wl,-O1 -pie",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:14:46Z",
+          "created_by": "/bin/sh -c #(nop)  ENV GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:14:46Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_VERSION=8.0.28",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:14:46Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_URL=https://www.php.net/distributions/php-8.0.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.0.28.tar.xz.asc",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:14:46Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PHP_SHA256=5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:14:58Z",
+          "created_by": "/bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends gnupg dirmngr; \trm -rf /var/lib/apt/lists/*; \t\tmkdir -p /usr/src; \tcd /usr/src; \t\tcurl -fsSL -o php.tar.xz \"$PHP_URL\"; \t\tif [ -n \"$PHP_SHA256\" ]; then \t\techo \"$PHP_SHA256 *php.tar.xz\" | sha256sum -c -; \tfi; \t\tif [ -n \"$PHP_ASC_URL\" ]; then \t\tcurl -fsSL -o php.tar.xz.asc \"$PHP_ASC_URL\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \t\tfor key in $GPG_KEYS; do \t\t\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \t\tdone; \t\tgpg --batch --verify php.tar.xz.asc php.tar.xz; \t\tgpgconf --kill all; \t\trm -rf \"$GNUPGHOME\"; \tfi; \t\tapt-mark auto '.*' \u003e /dev/null; \tapt-mark manual $savedAptMark \u003e /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false"
+        },
+        {
+          "created": "2023-03-28T00:14:58Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ "
+        },
+        {
+          "created": "2023-03-28T00:17:59Z",
+          "created_by": "/bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tapache2-dev \t\tlibargon2-dev \t\tlibcurl4-openssl-dev \t\tlibonig-dev \t\tlibreadline-dev \t\tlibsodium-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibxml2-dev \t\tzlib1g-dev \t; \t\texport \t\tCFLAGS=\"$PHP_CFLAGS\" \t\tCPPFLAGS=\"$PHP_CPPFLAGS\" \t\tLDFLAGS=\"$PHP_LDFLAGS\" \t; \tdocker-php-source extract; \tcd /usr/src/php; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \tdebMultiarch=\"$(dpkg-architecture --query DEB_BUILD_MULTIARCH)\"; \tif [ ! -d /usr/include/curl ]; then \t\tln -sT \"/usr/include/$debMultiarch/curl\" /usr/local/include/curl; \tfi; \t./configure \t\t--build=\"$gnuArch\" \t\t--with-config-file-path=\"$PHP_INI_DIR\" \t\t--with-config-file-scan-dir=\"$PHP_INI_DIR/conf.d\" \t\t\t\t--enable-option-checking=fatal \t\t\t\t--with-mhash \t\t\t\t--with-pic \t\t\t\t--enable-ftp \t\t--enable-mbstring \t\t--enable-mysqlnd \t\t--with-password-argon2 \t\t--with-sodium=shared \t\t--with-pdo-sqlite=/usr \t\t--with-sqlite3=/usr \t\t\t\t--with-curl \t\t--with-iconv \t\t--with-openssl \t\t--with-readline \t\t--with-zlib \t\t\t\t--disable-phpdbg \t\t\t\t--with-pear \t\t\t\t$(test \"$gnuArch\" = 's390x-linux-gnu' \u0026\u0026 echo '--without-pcre-jit') \t\t--with-libdir=\"lib/$debMultiarch\" \t\t\t\t--disable-cgi \t\t\t\t--with-apxs2 \t; \tmake -j \"$(nproc)\"; \tfind -type f -name '*.a' -delete; \tmake install; \tfind \t\t/usr/local \t\t-type f \t\t-perm '/0111' \t\t-exec sh -euxc ' \t\t\tstrip --strip-all \"$@\" || : \t\t' -- '{}' + \t; \tmake clean; \t\tcp -v php.ini-* \"$PHP_INI_DIR/\"; \t\tcd /; \tdocker-php-source delete; \t\tapt-mark auto '.*' \u003e /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=\u003e/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\tpecl update-channels; \trm -rf /tmp/pear ~/.pearrc; \t\tphp --version"
+        },
+        {
+          "created": "2023-03-28T00:17:59Z",
+          "created_by": "/bin/sh -c #(nop) COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ "
+        },
+        {
+          "created": "2023-03-28T00:17:59Z",
+          "created_by": "/bin/sh -c docker-php-ext-enable sodium"
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-php-entrypoint\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGWINCH",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ "
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /var/www/html",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T00:18:00Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"apache2-foreground\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T01:45:05Z",
+          "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tghostscript \t; \trm -rf /var/lib/apt/lists/*"
+        },
+        {
+          "created": "2023-03-28T01:46:25Z",
+          "created_by": "/bin/sh -c set -ex; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \t\tapt-get update; \tapt-get install -y --no-install-recommends \t\tlibfreetype6-dev \t\tlibicu-dev \t\tlibjpeg-dev \t\tlibmagickwand-dev \t\tlibpng-dev \t\tlibwebp-dev \t\tlibzip-dev \t; \t\tdocker-php-ext-configure gd \t\t--with-freetype \t\t--with-jpeg \t\t--with-webp \t; \tdocker-php-ext-install -j \"$(nproc)\" \t\tbcmath \t\texif \t\tgd \t\tintl \t\tmysqli \t\tzip \t; \tpecl install imagick-3.6.0; \tdocker-php-ext-enable imagick; \trm -r /tmp/pear; \t\tout=\"$(php -r 'exit(0);')\"; \t[ -z \"$out\" ]; \terr=\"$(php -r 'exit(0);' 3\u003e\u00261 1\u003e\u00262 2\u003e\u00263)\"; \t[ -z \"$err\" ]; \t\textDir=\"$(php -r 'echo ini_get(\"extension_dir\");')\"; \t[ -d \"$extDir\" ]; \tapt-mark auto '.*' \u003e /dev/null; \tapt-mark manual $savedAptMark; \tldd \"$extDir\"/*.so \t\t| awk '/=\u003e/ { print $3 }' \t\t| sort -u \t\t| xargs -r dpkg-query -S \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -rt apt-mark manual; \t\tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\t! { ldd \"$extDir\"/*.so | grep 'not found'; }; \terr=\"$(php --version 3\u003e\u00261 1\u003e\u00262 2\u003e\u00263)\"; \t[ -z \"$err\" ]"
+        },
+        {
+          "created": "2023-03-28T01:46:26Z",
+          "created_by": "/bin/sh -c set -eux; \tdocker-php-ext-enable opcache; \t{ \t\techo 'opcache.memory_consumption=128'; \t\techo 'opcache.interned_strings_buffer=8'; \t\techo 'opcache.max_accelerated_files=4000'; \t\techo 'opcache.revalidate_freq=2'; \t} \u003e /usr/local/etc/php/conf.d/opcache-recommended.ini"
+        },
+        {
+          "created": "2023-03-28T01:46:26Z",
+          "created_by": "/bin/sh -c { \t\techo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; \t\techo 'display_errors = Off'; \t\techo 'display_startup_errors = Off'; \t\techo 'log_errors = On'; \t\techo 'error_log = /dev/stderr'; \t\techo 'log_errors_max_len = 1024'; \t\techo 'ignore_repeated_errors = On'; \t\techo 'ignore_repeated_source = Off'; \t\techo 'html_errors = Off'; \t} \u003e /usr/local/etc/php/conf.d/error-logging.ini"
+        },
+        {
+          "created": "2023-03-28T01:46:27Z",
+          "created_by": "/bin/sh -c set -eux; \ta2enmod rewrite expires; \t\ta2enmod remoteip; \t{ \t\techo 'RemoteIPHeader X-Forwarded-For'; \t\techo 'RemoteIPTrustedProxy 10.0.0.0/8'; \t\techo 'RemoteIPTrustedProxy 172.16.0.0/12'; \t\techo 'RemoteIPTrustedProxy 192.168.0.0/16'; \t\techo 'RemoteIPTrustedProxy 169.254.0.0/16'; \t\techo 'RemoteIPTrustedProxy 127.0.0.0/8'; \t} \u003e /etc/apache2/conf-available/remoteip.conf; \ta2enconf remoteip; \tfind /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+\"[^\"]*)%h([^\"]*\")/\\1%a\\2/g' '{}' +"
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c set -eux; \tversion='6.2'; \tsha1='6fcc4c21b107a355e3df0798851d41e0d85f0e6d'; \t\tcurl -o wordpress.tar.gz -fL \"https://wordpress.org/wordpress-$version.tar.gz\"; \techo \"$sha1 *wordpress.tar.gz\" | sha1sum -c -; \t\ttar -xzf wordpress.tar.gz -C /usr/src/; \trm wordpress.tar.gz; \t\t[ ! -e /usr/src/wordpress/.htaccess ]; \t{ \t\techo '# BEGIN WordPress'; \t\techo ''; \t\techo 'RewriteEngine On'; \t\techo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; \t\techo 'RewriteBase /'; \t\techo 'RewriteRule ^index\\.php$ - [L]'; \t\techo 'RewriteCond %{REQUEST_FILENAME} !-f'; \t\techo 'RewriteCond %{REQUEST_FILENAME} !-d'; \t\techo 'RewriteRule . /index.php [L]'; \t\techo ''; \t\techo '# END WordPress'; \t} \u003e /usr/src/wordpress/.htaccess; \t\tchown -R www-data:www-data /usr/src/wordpress; \tmkdir wp-content; \tfor dir in /usr/src/wordpress/wp-content/*/ cache; do \t\tdir=\"$(basename \"${dir%/}\")\"; \t\tmkdir \"wp-content/$dir\"; \tdone; \tchown -R www-data:www-data wp-content; \tchmod -R 1777 wp-content"
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/var/www/html]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c #(nop) COPY --chown=www-data:www-datafile:d38fd3c0db552e13465e83c5d7bbd85c7c3d036bf1285495988cc4ab2ffaf7f5 in /usr/src/wordpress/ "
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ "
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-31T00:20:19Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"apache2-foreground\"]",
           "empty_layer": true
         }
       ],
@@ -82,36 +232,202 @@
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:ec09eb83ea031896df916feb3a61cefba9facf449c8a55d88667927538dca2b4",
-          "sha256:053a1f71007ec7293dceb3f229446da4c36bad0d27116ab5324e1c7b61071eae",
-          "sha256:a90e3914fb92b189ed9bbe543c4e4cc5be5bd3e7d221ef585405dd35b3e4db43",
-          "sha256:5ab567b9150b948de4708a880cad7026665e7e0a227dea526cc3839eca4b2515",
-          "sha256:d4514f8b2aac13e66dfc8b6e15aa2feb0d4ff942a192d9481f09b45e681ceb40",
-          "sha256:e19e53fd050b8f2683991d6188419083c4dc69557a8100cc564fc6d36e38886a",
-          "sha256:4669f35b231d492fbd00176e0d3257197864b873c2e48b97db55ba3a1306a8c3"
+          "sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6",
+          "sha256:b45c80a24442fcdcc7bbb616407166b8998b11634be9623ccc32904099844a51",
+          "sha256:c4bd73e3313b668236e736cc7a72771cb8952e4268afe5c40285360b32e8aa0f",
+          "sha256:cfb7053350c422cfb726e8f8a4d72b8610ee6eac5528d879cdd8cc62fb1e4d4b",
+          "sha256:8b80409103eeaab5d0b91cccf0b9433d56eaad369e7ac516ab81bfdd5246a214",
+          "sha256:07583c9c30165412b76a9485260e701007b6ed0552a31a98515f5ca56060adff",
+          "sha256:4adc4f8ad1cb16307c608a608bfa4fe0ced3f66b3631ddc785c16b35a53e6163",
+          "sha256:e488e800e73bca13f323d37eaa4de10a4a0171023ac730267544f1bd8229d5da",
+          "sha256:9f9b5770e7807412766d854a63f6b336173f759d7fb6024f1c7857846c17e62f",
+          "sha256:1f434a91a4e142b65191fa525fbd0e8abbe907d3140a40914e3f992595179917",
+          "sha256:f4dfe6d892cd117521fe07377bd0a834f8aa03e90fad8f9f1fef19a79048da98",
+          "sha256:6c0a8e761c04168b46fe188e29db2434a49ec29ee2d5eebe5ede2d6b360eb4cd",
+          "sha256:26801b112ae2387eb9b16565936ab3a8c8a41788f8ffc93c73573ca32e8c0741",
+          "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1",
+          "sha256:a0dc0c8f0f82b7cfb2fe00646e087484193ae209ae05748207833a3f976bcff7",
+          "sha256:8629619640e326a754b8d635de0e48a65d641b7398ca85127bffcd14df9bd76a",
+          "sha256:4084dcb4694272e1d5734c5c2011c6612188b6e2a7f02425127f1a313c1f351c",
+          "sha256:272224f8743068129ddb31846464f1f3e112b28035f82b92f4a484fbe85932aa",
+          "sha256:03b3480fe4fd0762855c16c7486c8c037750920a61ab279d515f7394df32814a",
+          "sha256:c40821032f2eeff56d1b6cc433943d68537b0aee50e0b6c642771fd22185e462",
+          "sha256:38f788d44da4fd32b10c2a66f8b9b21e06ec88d6e2632527e0d8f45485c27d0f"
         ]
       },
       "config": {
         "Cmd": [
-          "perl5.36.0",
-          "-de0"
+          "apache2-foreground"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
         ],
         "Env": [
-          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+          "PHP_INI_DIR=/usr/local/etc/php",
+          "APACHE_CONFDIR=/etc/apache2",
+          "APACHE_ENVVARS=/etc/apache2/envvars",
+          "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_LDFLAGS=-Wl,-O1 -pie",
+          "GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4",
+          "PHP_VERSION=8.0.28",
+          "PHP_URL=https://www.php.net/distributions/php-8.0.28.tar.xz",
+          "PHP_ASC_URL=https://www.php.net/distributions/php-8.0.28.tar.xz.asc",
+          "PHP_SHA256=5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd"
         ],
-        "Image": "sha256:581572474a7321ecedfae2a55c3af445b7354e8853743c9936c092e576902bcb",
-        "Labels": {
-          "maintainer": "Peter Martini \u003cPeterCMartini@GMail.com\u003e, Zak B. Elep \u003czakame@cpan.org\u003e"
+        "Image": "sha256:a7cf6bdfebd7d56802c64b016a77079a9700a75c102cea413d7b34172b0d17cd",
+        "Volumes": {
+          "/var/www/html": {}
         },
-        "WorkingDir": "/"
+        "WorkingDir": "/var/www/html",
+        "StopSignal": "SIGWINCH"
       }
     }
   },
   "Results": [
     {
-      "Target": "perl (debian 11.6)",
+      "Target": "wordpress (debian 11.6)",
       "Class": "os-pkgs",
-      "Type": "debian"
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-28879",
+          "VendorIDs": [
+            "DSA-5383-1"
+          ],
+          "PkgID": "ghostscript@9.53.3~dfsg-7+deb11u2",
+          "PkgName": "ghostscript",
+          "InstalledVersion": "9.53.3~dfsg-7+deb11u2",
+          "FixedVersion": "9.53.3~dfsg-7+deb11u4",
+          "Layer": {
+            "DiffID": "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-28879",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ghostscript: buffer-overblow in base/sbcp.c leading to data corruption",
+          "Description": "In Artifex Ghostscript through 10.01.0, there is a buffer overflow leading to potential corruption of data internal to the PostScript interpreter, in base/sbcp.c. This affects BCPEncode, BCPDecode, TBCPEncode, and TBCPDecode. If the write buffer is filled to one byte less than full, and one then tries to write an escaped character, two bytes are written.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-28879",
+            "https://bugs.ghostscript.com/show_bug.cgi?id=706494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28879",
+            "https://ghostscript.readthedocs.io/en/latest/News.html",
+            "https://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=37ed5022cecd584de868933b5b60da2e995b3179",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-28879",
+            "https://www.cve.org/CVERecord?id=CVE-2023-28879",
+            "https://www.debian.org/security/2023/dsa-5383"
+          ],
+          "PublishedDate": "2023-03-31T17:15:00Z",
+          "LastModifiedDate": "2023-04-08T02:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-28879",
+          "VendorIDs": [
+            "DSA-5383-1"
+          ],
+          "PkgID": "libgs9@9.53.3~dfsg-7+deb11u2",
+          "PkgName": "libgs9",
+          "InstalledVersion": "9.53.3~dfsg-7+deb11u2",
+          "FixedVersion": "9.53.3~dfsg-7+deb11u4",
+          "Layer": {
+            "DiffID": "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-28879",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ghostscript: buffer-overblow in base/sbcp.c leading to data corruption",
+          "Description": "In Artifex Ghostscript through 10.01.0, there is a buffer overflow leading to potential corruption of data internal to the PostScript interpreter, in base/sbcp.c. This affects BCPEncode, BCPDecode, TBCPEncode, and TBCPDecode. If the write buffer is filled to one byte less than full, and one then tries to write an escaped character, two bytes are written.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-28879",
+            "https://bugs.ghostscript.com/show_bug.cgi?id=706494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28879",
+            "https://ghostscript.readthedocs.io/en/latest/News.html",
+            "https://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=37ed5022cecd584de868933b5b60da2e995b3179",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-28879",
+            "https://www.cve.org/CVERecord?id=CVE-2023-28879",
+            "https://www.debian.org/security/2023/dsa-5383"
+          ],
+          "PublishedDate": "2023-03-31T17:15:00Z",
+          "LastModifiedDate": "2023-04-08T02:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-28879",
+          "VendorIDs": [
+            "DSA-5383-1"
+          ],
+          "PkgID": "libgs9-common@9.53.3~dfsg-7+deb11u2",
+          "PkgName": "libgs9-common",
+          "InstalledVersion": "9.53.3~dfsg-7+deb11u2",
+          "FixedVersion": "9.53.3~dfsg-7+deb11u4",
+          "Layer": {
+            "DiffID": "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-28879",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "ghostscript: buffer-overblow in base/sbcp.c leading to data corruption",
+          "Description": "In Artifex Ghostscript through 10.01.0, there is a buffer overflow leading to potential corruption of data internal to the PostScript interpreter, in base/sbcp.c. This affects BCPEncode, BCPDecode, TBCPEncode, and TBCPDecode. If the write buffer is filled to one byte less than full, and one then tries to write an escaped character, two bytes are written.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-28879",
+            "https://bugs.ghostscript.com/show_bug.cgi?id=706494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28879",
+            "https://ghostscript.readthedocs.io/en/latest/News.html",
+            "https://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=37ed5022cecd584de868933b5b60da2e995b3179",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-28879",
+            "https://www.cve.org/CVERecord?id=CVE-2023-28879",
+            "https://www.debian.org/security/2023/dsa-5383"
+          ],
+          "PublishedDate": "2023-03-31T17:15:00Z",
+          "LastModifiedDate": "2023-04-08T02:24:00Z"
+        }
+      ]
     }
   ]
 }
