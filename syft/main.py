@@ -1,7 +1,7 @@
 import json
 import csv
 import os
-filename='data/image_stats.csv'
+filename='data/new_image_list.csv'
 images = []
 
 with open(filename, 'r') as file:
@@ -11,11 +11,11 @@ with open(filename, 'r') as file:
 
 print(images)
 
-f = open('syft/res.csv', 'a+')
+f = open('syft/new_res.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(122, len(images)):
+for i in range(0, len(images)):
     image = images[i]
     data_row = [image]
     print(image)

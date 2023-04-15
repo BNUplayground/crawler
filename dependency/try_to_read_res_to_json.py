@@ -1,7 +1,6 @@
 import csv
 
 import json
-from chrome import 
 import chrome
 
 def get_package_information(PkgName,OriginalVersion,FixedVersion):

@@ -1,7 +1,7 @@
 import json
 import csv
 import os
-filename='data/image_stats.csv'
+filename='data/new_image_list.csv'
 images = []
 
 with open(filename, 'r') as file:
@@ -10,11 +10,11 @@ with open(filename, 'r') as file:
         images.append(row[0])
 print(images)
 
-f = open('trivy/res_all.csv', 'a+')
+f = open('trivy/new_res_all.csv', 'a+')
 
 csv_writer = csv.writer(f)
 
-for i in range(132, len(images)):
+for i in range(87, len(images)):
     image = images[i]
     if(image == "aerospike"):
         image = image + ":ee-6.2.0.7_1"
