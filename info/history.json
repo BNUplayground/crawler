@@ -1,0 +1,14 @@
+{"Comment":"","CreatedAt":"2016-12-20T00:33:54+08:00","CreatedBy":"/bin/sh -c pip install mysqlclient psycopg2 …","CreatedSince":"6 years ago","ID":"eb40dcf64078","Size":"37MB"}
+{"Comment":"","CreatedAt":"2016-12-20T00:33:34+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV DJANGO_VERSION=1.10.4","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-20T00:33:33+08:00","CreatedBy":"/bin/sh -c apt-get update \u0026\u0026 apt-get install…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"205MB"}
+{"Comment":"","CreatedAt":"2016-12-15T02:55:40+08:00","CreatedBy":"/bin/sh -c #(nop)  CMD [\"python3\"]","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-15T02:55:40+08:00","CreatedBy":"/bin/sh -c cd /usr/local/bin  \u0026\u0026 { [ -e easy…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"48B"}
+{"Comment":"","CreatedAt":"2016-12-15T02:55:39+08:00","CreatedBy":"/bin/sh -c set -ex  \u0026\u0026 buildDeps='   gcc   l…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"63.9MB"}
+{"Comment":"","CreatedAt":"2016-12-15T02:52:51+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-15T02:52:51+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.4.5","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-15T02:47:38+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV GPG_KEY=97FC712E4C024…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-15T01:38:06+08:00","CreatedBy":"/bin/sh -c apt-get update \u0026\u0026 apt-get install…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"7.45MB"}
+{"Comment":"","CreatedAt":"2016-12-15T01:36:48+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV LANG=C.UTF-8","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-15T01:36:48+08:00","CreatedBy":"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-14T06:10:59+08:00","CreatedBy":"/bin/sh -c #(nop)  CMD [\"/bin/bash\"]","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"","CreatedAt":"2016-12-14T06:10:59+08:00","CreatedBy":"/bin/sh -c #(nop) ADD file:1d214d2782eaccc74…","CreatedSince":"6 years ago","ID":"\u003cmissing\u003e","Size":"123MB"}

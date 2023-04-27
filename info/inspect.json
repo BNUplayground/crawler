@@ -1,0 +1,104 @@
+[
+    {
+        "Id": "sha256:eb40dcf64078249a33f68fdd8d80624cb81b524c24f50b95fff5c2b40bdc3fdc",
+        "RepoTags": [
+            "django:latest"
+        ],
+        "RepoDigests": [
+            "django@sha256:5bfd3f442952463f5bc97188b7f43cfcd6c2f631a017ee2a6fca3cb8992501e8"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2016-12-19T16:33:54.395309269Z",
+        "Container": "2d40ee659574067115cb6392d3b2bc78d255006fc5cfbb23be780c6ecc0dce77",
+        "ContainerConfig": {
+            "Hostname": "45f28166fed1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D",
+                "PYTHON_VERSION=3.4.5",
+                "PYTHON_PIP_VERSION=9.0.1",
+                "DJANGO_VERSION=1.10.4"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "pip install mysqlclient psycopg2 django==\"$DJANGO_VERSION\""
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:be9bcca326e865bdbda6cf58f96167177df57424718788a10b7b2f3b673ea379",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": [],
+            "Labels": {}
+        },
+        "DockerVersion": "1.12.3",
+        "Author": "",
+        "Config": {
+            "Hostname": "45f28166fed1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D",
+                "PYTHON_VERSION=3.4.5",
+                "PYTHON_PIP_VERSION=9.0.1",
+                "DJANGO_VERSION=1.10.4"
+            ],
+            "Cmd": [
+                "python3"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:be9bcca326e865bdbda6cf58f96167177df57424718788a10b7b2f3b673ea379",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": [],
+            "Labels": {}
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 436117187,
+        "VirtualSize": 436117187,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/b26376bfa6ee1aa0784e12860d9cfb213902e0f143224b85eb65bfd6a524f518/diff:/var/lib/docker/overlay2/5ffc61ca2ac54ff1b313ab3b01e6db143a664f369b051f89e94bdc1a3521cabf/diff:/var/lib/docker/overlay2/647411f5dc0caef705aeb6924bc30f35ddda2b533cc9767767fc19a582590ecc/diff:/var/lib/docker/overlay2/ec398f05ff75e79a36f102a0df4ed605985c18a7c8f07d25e6f4700a3d865439/diff:/var/lib/docker/overlay2/ffd456ee2602448a0970171ee8d8d92991cb2db7092dccb01bea253a0bd9330c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/merged",
+                "UpperDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/diff",
+                "WorkDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
+                "sha256:40cc5c729ee12cbf17805f72beb035b2356a9e0a4ec7926a258355fa3713c0dd",
+                "sha256:f72299e7fd5a1ae319466b83cadd42abe15661fd2cf9afa92f49cdd7a534df51",
+                "sha256:4bd3b46a8734dd8cb6f7fee98cb9c9084a9ce4dd0242c9f7659b0f2c660f5692",
+                "sha256:6d0632e611f48587e00a3c093d4afddcbc637995122666b65e08a637ef1603a6",
+                "sha256:e6d982acf7bfa32b3d8187f4e3a680726c5b11fcf49571f92582289198948309"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
