@@ -2,11 +2,11 @@ import csv
 import json
 
 # 打开JSON文件
-with open('share_file\crawler\info\inspect.json', 'r') as f:
+with open('./info/inspect.json', 'r') as f:
     data = json.load(f)
 
 # 写入CSV文件
-with open('share_file\crawler\info\\testoutput.csv', 'w', newline='') as f:
+with open('./info/inspect.csv', 'w', newline='') as f:
     writer = csv.writer(f)
 
     # 写入表头

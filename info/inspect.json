@@ -1,100 +1,144 @@
 [
     {
-        "Id": "sha256:eb40dcf64078249a33f68fdd8d80624cb81b524c24f50b95fff5c2b40bdc3fdc",
+        "Id": "sha256:3d55a510c77e3af1a27fa189967ac05f3e4b9fdb4f09ce6e098cd3bd359245a0",
         "RepoTags": [
-            "django:latest"
+            "wordpress:latest"
         ],
         "RepoDigests": [
-            "django@sha256:5bfd3f442952463f5bc97188b7f43cfcd6c2f631a017ee2a6fca3cb8992501e8"
+            "wordpress@sha256:fad1ce2182a79e442b20b333a3be786e84a4e44391f87dab51a1992e22790528"
         ],
         "Parent": "",
         "Comment": "",
-        "Created": "2016-12-19T16:33:54.395309269Z",
-        "Container": "2d40ee659574067115cb6392d3b2bc78d255006fc5cfbb23be780c6ecc0dce77",
+        "Created": "2023-03-31T00:20:19.848769661Z",
+        "Container": "3b24028610f95b3577c7c994ee2c4be8f6c5750c7503fe7803d019b4a83fdfc2",
         "ContainerConfig": {
-            "Hostname": "45f28166fed1",
+            "Hostname": "3b24028610f9",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
             "AttachStdout": false,
             "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
             "Tty": false,
             "OpenStdin": false,
             "StdinOnce": false,
             "Env": [
-                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                "LANG=C.UTF-8",
-                "GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D",
-                "PYTHON_VERSION=3.4.5",
-                "PYTHON_PIP_VERSION=9.0.1",
-                "DJANGO_VERSION=1.10.4"
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4",
+                "PHP_VERSION=8.0.28",
+                "PHP_URL=https://www.php.net/distributions/php-8.0.28.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.0.28.tar.xz.asc",
+                "PHP_SHA256=5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd"
             ],
             "Cmd": [
                 "/bin/sh",
                 "-c",
-                "pip install mysqlclient psycopg2 django==\"$DJANGO_VERSION\""
+                "#(nop) ",
+                "CMD [\"apache2-foreground\"]"
             ],
-            "ArgsEscaped": true,
-            "Image": "sha256:be9bcca326e865bdbda6cf58f96167177df57424718788a10b7b2f3b673ea379",
-            "Volumes": null,
-            "WorkingDir": "",
-            "Entrypoint": null,
-            "OnBuild": [],
-            "Labels": {}
+            "Image": "sha256:a7cf6bdfebd7d56802c64b016a77079a9700a75c102cea413d7b34172b0d17cd",
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {},
+            "StopSignal": "SIGWINCH"
         },
-        "DockerVersion": "1.12.3",
+        "DockerVersion": "20.10.23",
         "Author": "",
         "Config": {
-            "Hostname": "45f28166fed1",
+            "Hostname": "",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
             "AttachStdout": false,
             "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
             "Tty": false,
             "OpenStdin": false,
             "StdinOnce": false,
             "Env": [
-                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                "LANG=C.UTF-8",
-                "GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D",
-                "PYTHON_VERSION=3.4.5",
-                "PYTHON_PIP_VERSION=9.0.1",
-                "DJANGO_VERSION=1.10.4"
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4",
+                "PHP_VERSION=8.0.28",
+                "PHP_URL=https://www.php.net/distributions/php-8.0.28.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.0.28.tar.xz.asc",
+                "PHP_SHA256=5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd"
             ],
             "Cmd": [
-                "python3"
+                "apache2-foreground"
             ],
-            "ArgsEscaped": true,
-            "Image": "sha256:be9bcca326e865bdbda6cf58f96167177df57424718788a10b7b2f3b673ea379",
-            "Volumes": null,
-            "WorkingDir": "",
-            "Entrypoint": null,
-            "OnBuild": [],
-            "Labels": {}
+            "Image": "sha256:a7cf6bdfebd7d56802c64b016a77079a9700a75c102cea413d7b34172b0d17cd",
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": null,
+            "StopSignal": "SIGWINCH"
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 436117187,
-        "VirtualSize": 436117187,
+        "Size": 615622513,
+        "VirtualSize": 615622513,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/b26376bfa6ee1aa0784e12860d9cfb213902e0f143224b85eb65bfd6a524f518/diff:/var/lib/docker/overlay2/5ffc61ca2ac54ff1b313ab3b01e6db143a664f369b051f89e94bdc1a3521cabf/diff:/var/lib/docker/overlay2/647411f5dc0caef705aeb6924bc30f35ddda2b533cc9767767fc19a582590ecc/diff:/var/lib/docker/overlay2/ec398f05ff75e79a36f102a0df4ed605985c18a7c8f07d25e6f4700a3d865439/diff:/var/lib/docker/overlay2/ffd456ee2602448a0970171ee8d8d92991cb2db7092dccb01bea253a0bd9330c/diff",
-                "MergedDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/merged",
-                "UpperDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/diff",
-                "WorkDir": "/var/lib/docker/overlay2/48300db117a847d35c6b3b3bc297dc70f73e1816e9704820cad6a94acdec4466/work"
+                "LowerDir": "/var/lib/docker/overlay2/15da00ad3d5e3555c6dc132fa5deb7bcf8faf4499788a54cec80efef74dad8c6/diff:/var/lib/docker/overlay2/6b2593295c29303b9f77e1da23ffd8558d34a0ac9044f3c36835609d71d68d32/diff:/var/lib/docker/overlay2/235383629cfa2f071d355c86ffa994a919facf7ade22f55f2d4d2a14259ff2a7/diff:/var/lib/docker/overlay2/2943b45c120653750a2f71bcf6f4c53eeb8e8e7db317fe7e470bcf288f245079/diff:/var/lib/docker/overlay2/31e7ef0c0e3b802b14369bccffbd6a9665d89ae830798a7eba104adc8486c7d4/diff:/var/lib/docker/overlay2/fe8b4c89854947775407572cc63b3dfa49ab16d8e2a8f563834a129879ec7d6a/diff:/var/lib/docker/overlay2/7b2f8900d4aa8ce78de2c0c3460865ee1a65cad2b3330a9992e106dcc6edff78/diff:/var/lib/docker/overlay2/3db52d184cfb3334042f3fc045f471aa9f01c0eacb6e7999a4b22ef608aa1d56/diff:/var/lib/docker/overlay2/4788f85f987ec012aa44e5da9888f04e824cfbda8fb42925a61cdd33573166ee/diff:/var/lib/docker/overlay2/4dc8c297bb596a9d3bebd4e1050ccfe59bc32a1929a8484313d5483a9ea5abac/diff:/var/lib/docker/overlay2/af065963b79660dcc2d8591b7f7b4a4bbf82ed51b1baccc3a5c91e415d68bcc8/diff:/var/lib/docker/overlay2/d9f5ae61589e9ff9a3a452d6c46f9fb7606ae6448db1b1679ec55e45325f35b6/diff:/var/lib/docker/overlay2/0266097a4245c3a688f9ea85b094220a03035744847a81fa2dbd9b565c88742b/diff:/var/lib/docker/overlay2/b394a27258580f2d68d58e77418eeb58418b1e9dcc2fbc97aadb41a3a2590d84/diff:/var/lib/docker/overlay2/f4741034cd95d4301cb30233efaa247ed91c12d6e35527c73daa420d6b85c786/diff:/var/lib/docker/overlay2/3efb364f02688d5a866eeaf3d3ad02302d1248729903c956bef62370b2ef0937/diff:/var/lib/docker/overlay2/5a893ee5ce98dc35c1799c7695dcb82a327cde8da038cb40ffdc7e644c82dc98/diff:/var/lib/docker/overlay2/76b7758780fb215c0f010de63ed168c98e448c7f1ea675a2ad45f8b6829f74d4/diff:/var/lib/docker/overlay2/d378b83a7934e3e86091272343fe88f4005b7cc094d5f99cf52cf8928864acb7/diff:/var/lib/docker/overlay2/c07509819be60ef795c5f3f0b1b224d920d214c6855d080240042c8940257431/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4d84638a95bf5a1a0646ef4cc42d13f8d8f5719ee9895d3b5b96a1b26a30a99c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4d84638a95bf5a1a0646ef4cc42d13f8d8f5719ee9895d3b5b96a1b26a30a99c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4d84638a95bf5a1a0646ef4cc42d13f8d8f5719ee9895d3b5b96a1b26a30a99c/work"
             },
             "Name": "overlay2"
         },
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
-                "sha256:40cc5c729ee12cbf17805f72beb035b2356a9e0a4ec7926a258355fa3713c0dd",
-                "sha256:f72299e7fd5a1ae319466b83cadd42abe15661fd2cf9afa92f49cdd7a534df51",
-                "sha256:4bd3b46a8734dd8cb6f7fee98cb9c9084a9ce4dd0242c9f7659b0f2c660f5692",
-                "sha256:6d0632e611f48587e00a3c093d4afddcbc637995122666b65e08a637ef1603a6",
-                "sha256:e6d982acf7bfa32b3d8187f4e3a680726c5b11fcf49571f92582289198948309"
+                "sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6",
+                "sha256:b45c80a24442fcdcc7bbb616407166b8998b11634be9623ccc32904099844a51",
+                "sha256:c4bd73e3313b668236e736cc7a72771cb8952e4268afe5c40285360b32e8aa0f",
+                "sha256:cfb7053350c422cfb726e8f8a4d72b8610ee6eac5528d879cdd8cc62fb1e4d4b",
+                "sha256:8b80409103eeaab5d0b91cccf0b9433d56eaad369e7ac516ab81bfdd5246a214",
+                "sha256:07583c9c30165412b76a9485260e701007b6ed0552a31a98515f5ca56060adff",
+                "sha256:4adc4f8ad1cb16307c608a608bfa4fe0ced3f66b3631ddc785c16b35a53e6163",
+                "sha256:e488e800e73bca13f323d37eaa4de10a4a0171023ac730267544f1bd8229d5da",
+                "sha256:9f9b5770e7807412766d854a63f6b336173f759d7fb6024f1c7857846c17e62f",
+                "sha256:1f434a91a4e142b65191fa525fbd0e8abbe907d3140a40914e3f992595179917",
+                "sha256:f4dfe6d892cd117521fe07377bd0a834f8aa03e90fad8f9f1fef19a79048da98",
+                "sha256:6c0a8e761c04168b46fe188e29db2434a49ec29ee2d5eebe5ede2d6b360eb4cd",
+                "sha256:26801b112ae2387eb9b16565936ab3a8c8a41788f8ffc93c73573ca32e8c0741",
+                "sha256:4dfc7cc7e849f645b6de9b180c1a8f3986298e9346c46fcb63ee210335eb70f1",
+                "sha256:a0dc0c8f0f82b7cfb2fe00646e087484193ae209ae05748207833a3f976bcff7",
+                "sha256:8629619640e326a754b8d635de0e48a65d641b7398ca85127bffcd14df9bd76a",
+                "sha256:4084dcb4694272e1d5734c5c2011c6612188b6e2a7f02425127f1a313c1f351c",
+                "sha256:272224f8743068129ddb31846464f1f3e112b28035f82b92f4a484fbe85932aa",
+                "sha256:03b3480fe4fd0762855c16c7486c8c037750920a61ab279d515f7394df32814a",
+                "sha256:c40821032f2eeff56d1b6cc433943d68537b0aee50e0b6c642771fd22185e462",
+                "sha256:38f788d44da4fd32b10c2a66f8b9b21e06ec88d6e2632527e0d8f45485c27d0f"
             ]
         },
         "Metadata": {

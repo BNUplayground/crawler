@@ -1,7 +1,0 @@
-RepoTags,Architecture,Os,Size,Layer_hash,Layer_number,Layer_size
-django:latest,amd64,linux,436117187,sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3,1,71
-django:latest,amd64,linux,436117187,sha256:40cc5c729ee12cbf17805f72beb035b2356a9e0a4ec7926a258355fa3713c0dd,2,71
-django:latest,amd64,linux,436117187,sha256:f72299e7fd5a1ae319466b83cadd42abe15661fd2cf9afa92f49cdd7a534df51,3,71
-django:latest,amd64,linux,436117187,sha256:4bd3b46a8734dd8cb6f7fee98cb9c9084a9ce4dd0242c9f7659b0f2c660f5692,4,71
-django:latest,amd64,linux,436117187,sha256:6d0632e611f48587e00a3c093d4afddcbc637995122666b65e08a637ef1603a6,5,71
-django:latest,amd64,linux,436117187,sha256:e6d982acf7bfa32b3d8187f4e3a680726c5b11fcf49571f92582289198948309,6,71
