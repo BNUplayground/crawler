@@ -21,8 +21,8 @@ f = open('info/res.csv', 'a+')
 csv_writer = csv.writer(f)
 
 # 写入表头
-csv_writer.writerow(["Image_name", "RepoTags","Download_counts" "Architecture", "Os", "Size",
-                "Layer_hash", "Layer_number", "Layer_size"])
+csv_writer.writerow(["Image_name", "RepoTags","Download_counts", "Architecture", "Os", "Size",
+                "Layer_hash", "Layer_number","Layer_allCount", "Layer_size"])
 
 for i in range(0, len(images)):
     image = images[i].strip()
